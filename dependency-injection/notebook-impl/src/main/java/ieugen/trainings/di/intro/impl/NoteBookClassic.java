@@ -1,4 +1,4 @@
-package ieugen.trainings.di.intro;
+package ieugen.trainings.di.intro.impl;
 
 import ieugen.trainings.di.intro.api.Battery;
 import ieugen.trainings.di.intro.api.Computer;
@@ -21,8 +21,9 @@ public class NoteBookClassic implements Computer {
     }
 
     @Override
-    public void boot() {
+    public String boot() {
         System.out.println("Booting :" + this.toString());
+        return this.toString();
     }
 
     @Override
