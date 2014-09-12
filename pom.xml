@@ -9,12 +9,13 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <name>Trainings :: Aggregator</name>
+
     <modules>
         <module>dependency-injection</module>
         <module>persistence</module>
         <module>osgi</module>
         <module>camel</module>
-        <module>parent</module>
     </modules>
 
 </project>
