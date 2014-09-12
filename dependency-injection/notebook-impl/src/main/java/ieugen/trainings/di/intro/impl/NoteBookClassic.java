@@ -4,9 +4,6 @@ import ieugen.trainings.di.intro.api.Battery;
 import ieugen.trainings.di.intro.api.Computer;
 import ieugen.trainings.di.intro.api.Display;
 import ieugen.trainings.di.intro.api.Keyboard;
-import ieugen.trainings.di.intro.impl.DefaultBattery;
-import ieugen.trainings.di.intro.impl.DefaultDisplay;
-import ieugen.trainings.di.intro.impl.USKeyboard;
 
 public class NoteBookClassic implements Computer {
 

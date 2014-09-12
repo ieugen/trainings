@@ -5,12 +5,15 @@ import ieugen.trainings.di.intro.api.Computer;
 import ieugen.trainings.di.intro.api.Display;
 import ieugen.trainings.di.intro.api.Keyboard;
 
+import javax.inject.Inject;
+
 public class NoteBook implements Computer {
 
     private Battery battery;
     private Display display;
     private Keyboard keyboard;
 
+    @Inject
     public NoteBook(Battery battery, Display display, Keyboard keyboard) {
         this.battery = battery;
         this.display = display;

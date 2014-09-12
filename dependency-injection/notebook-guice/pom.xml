@@ -2,26 +2,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>ieugen.trainings.di</groupId>
         <artifactId>parent</artifactId>
+        <groupId>ieugen.trainings.di</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../parent/pom.xml</relativePath>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>notebook-impl</artifactId>
+    <artifactId>notebook-guice</artifactId>
+    <name>Trainings :: Dependency injection :: Guice example</name>
 
-    <name>Trainings :: Dependency injection :: Notebook Impl</name>
 
     <dependencies>
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>3.0</version>
+        </dependency>
         <dependency>
             <groupId>ieugen.trainings.di</groupId>
             <artifactId>notebook-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>javax.inject</groupId>
-            <artifactId>javax.inject</artifactId>
+            <groupId>ieugen.trainings.di</groupId>
+            <artifactId>notebook-impl</artifactId>
         </dependency>
     </dependencies>
 

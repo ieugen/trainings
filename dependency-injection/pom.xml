@@ -21,6 +21,9 @@
         <module>intro</module>
         <module>notebook-api</module>
         <module>notebook-impl</module>
+        <module>notebook-guice</module>
+        <module>notebook-cdi</module>
+        <module>notebook-dagger</module>
     </modules>
 
 </project>
