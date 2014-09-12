@@ -2,7 +2,7 @@ package ieugen.trainings.di.guice;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
-import ieugen.trainings.di.intro.impl.NoteBook;
+import ieugen.trainings.di.notebook.impl.NoteBook;
 
 public class NoteBookApp {
 

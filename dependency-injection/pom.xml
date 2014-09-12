@@ -18,7 +18,8 @@
 
     <modules>
         <module>parent</module>
-        <module>intro</module>
+        <module>notebook-manual-di</module>
+        <module>notebook-spring</module>
         <module>notebook-api</module>
         <module>notebook-impl</module>
         <module>notebook-guice</module>

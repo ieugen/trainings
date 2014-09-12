@@ -1,14 +1,14 @@
 package ieugen.trainings.di.guice;
 
 import com.google.inject.AbstractModule;
-import ieugen.trainings.di.intro.api.Battery;
-import ieugen.trainings.di.intro.api.Computer;
-import ieugen.trainings.di.intro.api.Display;
-import ieugen.trainings.di.intro.api.Keyboard;
-import ieugen.trainings.di.intro.impl.DefaultBattery;
-import ieugen.trainings.di.intro.impl.LedKeyboard;
-import ieugen.trainings.di.intro.impl.NoteBook;
-import ieugen.trainings.di.intro.impl.RetinaDisplay;
+import ieugen.trainings.di.notebook.api.Battery;
+import ieugen.trainings.di.notebook.api.Computer;
+import ieugen.trainings.di.notebook.api.Display;
+import ieugen.trainings.di.notebook.api.Keyboard;
+import ieugen.trainings.di.notebook.impl.DefaultBattery;
+import ieugen.trainings.di.notebook.impl.LedKeyboard;
+import ieugen.trainings.di.notebook.impl.NoteBook;
+import ieugen.trainings.di.notebook.impl.RetinaDisplay;
 
 public class ModernNoteBookModule extends AbstractModule {
 
