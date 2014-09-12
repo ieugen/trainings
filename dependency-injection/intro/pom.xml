@@ -2,23 +2,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dependency-injection</artifactId>
+        <groupId>ieugen.trainings</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>ieugen.trainings</groupId>
-        <artifactId>parent</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <relativePath>parent</relativePath>
-    </parent>
+    <artifactId>intro</artifactId>
 
-    <artifactId>dependency-injection</artifactId>
-    <packaging>pom</packaging>
-
-    <name>Trainings :: Dependency injection :: aggregator</name>
-
-    <modules>
-        <module>parent</module>
-        <module>intro</module>
-    </modules>
 
 </project>
