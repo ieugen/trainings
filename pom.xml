@@ -14,6 +14,7 @@
         <module>persistence</module>
         <module>osgi</module>
         <module>camel</module>
+        <module>parent</module>
     </modules>
 
 </project>
