@@ -21,7 +21,7 @@ The following trainings are available:
 
 Download the code:
 ```
-    $ git clone .... trainings
+    $ git clone https://github.com/ieugen/trainings trainings
 ```
 
 Build it:
