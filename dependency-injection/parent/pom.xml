@@ -13,7 +13,7 @@
     <name>Trainings :: Dependency injection :: parent</name>
 
     <properties>
-        <springframework.version>3.2.11.RELEASE</springframework.version>
+        <springframework.version>4.1.0.RELEASE</springframework.version>
     </properties>
 
     <dependencyManagement>
