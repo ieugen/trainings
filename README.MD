@@ -19,6 +19,8 @@ The following trainings are available:
 * OSGi - introduction to OSGi and modularity
 * Apache Camel - integration with Apache Camel
 
+### Building and running
+
 Download the code:
 ```
     $ git clone https://github.com/ieugen/trainings trainings
@@ -29,5 +31,14 @@ Build it:
     cd trainings
     mvn clean install
 ```
+
+Run it using maven exec plugin:
+
+To run Main classes you can use the [Maven Exec plugin](http://mojo.codehaus.org/exec-maven-plugin/usage.html)
+```
+    mvn exec:java -Dexec.mainClass="com.example.Main" [-Dexec.args="argument1"]
+```
+
+
 
 

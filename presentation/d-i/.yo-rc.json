@@ -1,0 +1,8 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "Dependency Injection with Spring Framework",
+    "packageVersion": "0.0.0",
+    "useSass": false,
+    "deployToGithubPages": false
+  }
+}
