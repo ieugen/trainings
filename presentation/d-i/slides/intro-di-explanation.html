@@ -1,0 +1,38 @@
+<h2>Dependency Injection (2)</h2>
+
+<div class="container container-fluid">
+    <div class="row">
+        <div class="col-lg-6">
+            <p>Classic - no DI</p>
+            <pre><code data-trim class="java">
+                public NoteBookClassic() {
+                this.battery = new DefaultBattery();
+                this.display = new DefaultDisplay();
+                this.keyboard = new USKeyboard();
+                }
+            </code>
+            </pre>
+        </div>
+        <div class="col-lg-6">
+            <p>Constructor Based DI</p>
+                <pre><code data-trim class="java">
+                    public NoteBook(Battery battery, Display display, Keyboard keyboard) {
+                    this.battery = battery;
+                    this.display = display;
+                    this.keyboard = keyboard;
+                    }
+                </code>
+            </pre>
+        </div>
+    </div>
+</div>
+
+<aside class="notes">
+    <aside class="notes">
+        Problema cu modelul Clasic este că face testarea in izolare grea sau imposibilă.
+
+        This process is fundamentally the inverse, hence the name Inversion of Control (IoC), of the bean itself
+        controlling the instantiation or location of its dependencies by using direct construction of classes, or a
+        mechanism such as the Service Locator pattern.
+    </aside>
+</aside>

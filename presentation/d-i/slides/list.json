@@ -1,5 +1,30 @@
 [
-    "index.md",
-    "slide-title.html",
-    "slide-3.html"
+    "index.html",
+    "objectives.html",
+    [
+        "intro-di.html",
+        "intro-di-what-is-di.html",
+        "intro-di-explanation.html",
+        "intro-di-notebook-manual-di.html",
+        "intro-di-popular-implementations.html",
+        "intro-di-advantages.html",
+        "intro-di-disadvantages.html",
+        "intro-di-conclusions.html",
+        "intro-di-questions.html"
+    ],
+    "intro-spring.html",
+    "spring-modules.html",
+    "spring-overview.html",
+    [
+        "spring-core.html",
+        "spring-ioc-container.html"
+    ],
+    [
+        "spring-test.html"
+    ],
+    [
+        "spring-aop.html"
+    ],
+
+    "references.html"
 ]
