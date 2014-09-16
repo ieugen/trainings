@@ -26,6 +26,7 @@
         <module>notebook-cdi</module>
         <module>notebook-dagger</module>
         <module>spring-core/spring-configuration</module>
+        <module>spring-core/bean-lifecycle</module>
     </modules>
 
 </project>

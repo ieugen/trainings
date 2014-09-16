@@ -10,8 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-configuration</artifactId>
-
+    <artifactId>bean-lifecycle</artifactId>
 
     <dependencies>
         <dependency>
@@ -26,12 +25,6 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>javax.inject</groupId>-->
-            <!--<artifactId>javax.inject</artifactId>-->
-        <!--</dependency>-->
-
     </dependencies>
 
 </project>

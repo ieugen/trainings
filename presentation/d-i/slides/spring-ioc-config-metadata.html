@@ -3,9 +3,14 @@
 <p>Configuration meta-data can be supplied using</p>
 <ul>
     <li>XML format</li>
-    <li>Annotation-based configuration, since Spring 2.5, mix of XML and Java</li>
     <li>Java-based configuration, since spring 3.0</li>
+    <li>Annotation-based configuration, since Spring 2.5</li>
+    <li>A mix of them</li>
 </ul>
+
+<p>Go to <strong>spring-configuration</strong> module</p>
+
+<blockquote>Discussion: which one to use?</blockquote>
 
 <aside class="notes">
     <aside class="notes">
@@ -15,5 +20,22 @@
             <li>Java annotations</li>
             <li>Java code</li>
         </ul>
+
+        Discuție: care configurație să fie folosită?
+
+        Răspuns: Depinde de gustul programatorului.
+
+        <p>JavaConfig - este static typed și poate fi validată la compilare mai ușor dar necesită
+            recompilare dacă vreți să modificați configurația.</p>
+
+        <p>
+            Configurația XML poate fi generată și validată cu uneltele XML existente.
+            Permite definirea de name-space-uri.
+        </p>
+
+        <p>
+            Adnotările sunt invazive (te leagă de Spring sau javax.inject) și nu pot fi aplicate codului legacy.
+        </p>
+
     </aside>
 </aside>

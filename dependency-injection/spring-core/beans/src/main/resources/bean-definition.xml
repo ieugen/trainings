@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Example of defining beans with most properties -->
+
+    <bean id="all-properties"
+          class="di.spring.beans.definition.Foo"
+          name="fooName"
+          scope="singleton"
+          autowire="default" >
+
+        <constructor-arg value="some text"/>
+        <property name="b" value="3"/>
+    </bean>
+
+    <alias name="fooName" alias="newNameforFooName"/>
+
+</beans>

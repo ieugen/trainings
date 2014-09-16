@@ -7,7 +7,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AnnotationsMain {
 
     public static void main(String[] args) throws Exception {
-
         ApplicationContext context = new ClassPathXmlApplicationContext("annotations/foo-annotations.xml");
         Foo foo = (Foo) context.getBean("foo");
 

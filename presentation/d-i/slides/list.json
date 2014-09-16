@@ -19,7 +19,14 @@
         "spring-core.html",
         "spring-ioc-overview.html",
         "spring-ioc-container.html",
-        "spring-ioc-config-metadata.html"
+        "spring-ioc-application-context.html",
+        "spring-ioc-application-context2.html",
+        "spring-ioc-config-metadata.html",
+        "spring-ioc-bean.html",
+        "spring-ioc-dependency-resolution.html",
+        "spring-ioc-autowiring.html",
+        "spring-ioc-bean-scopes.html",
+        "spring-ioc-bean-lifecycle.html"
     ],
     [
         "spring-test.html"

@@ -1,0 +1,24 @@
+<span><code>ApplicationContext</code> interface</span>
+
+<pre><code>
+    ApplicationContext context =
+    new ClassPathXmlApplicationContext("services.xml");
+    Foo foo = context.getBean(Foo.class);
+</code>
+</pre>
+
+<aside class="notes">
+    <aside class="notes">
+        <p>It is an advanced Factory that maintains a registry of beans and their dependencies.</p>
+
+        <p>Accepts resource strings that allow the container to load the configuration metadata from a variety of
+            different external resources:
+        <ul>
+            <li>classpath</li>
+            <li>filesystem</li>
+            <li>etc</li>
+        </ul>
+
+        </p>
+    </aside>
+</aside>
