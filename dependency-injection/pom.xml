@@ -25,6 +25,7 @@
         <module>notebook-guice</module>
         <module>notebook-cdi</module>
         <module>notebook-dagger</module>
+        <module>spring-core/spring-configuration</module>
     </modules>
 
 </project>

@@ -17,7 +17,9 @@
     "spring-overview.html",
     [
         "spring-core.html",
-        "spring-ioc-container.html"
+        "spring-ioc-overview.html",
+        "spring-ioc-container.html",
+        "spring-ioc-config-metadata.html"
     ],
     [
         "spring-test.html"

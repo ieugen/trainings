@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <import resource="../annotations/foo-annotations.xml"/>
+    <import resource="foo-java.xml"/>
+
+    <bean id="fooFoo" class="di.spring.config.multiple.FooFoo">
+        <constructor-arg ref="aaaa"/>
+        <property name="javaFoo" ref="fooJava"/>
+    </bean>
+
+</beans>
