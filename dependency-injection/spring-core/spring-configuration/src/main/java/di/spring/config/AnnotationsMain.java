@@ -8,8 +8,9 @@ public class AnnotationsMain {
 
     public static void main(String[] args) throws Exception {
         ApplicationContext context = new ClassPathXmlApplicationContext("annotations/foo-annotations.xml");
-        Foo foo = (Foo) context.getBean("foo");
+        Foo foo = (Foo) context.getBean("aaaa");
 
+        // try commenting out @Component annotation from Bar or Baz classes - the beans will not be created.
         System.out.println(foo.makeSomeFoo());
 
     }

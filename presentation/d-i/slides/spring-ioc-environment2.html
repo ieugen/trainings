@@ -1,0 +1,18 @@
+<h3>Environment abstraction (2)</h3>
+
+<blockquote>Environment = profiles + properties</blockquote>
+<blockquote>profile = logical group of beans</blockquote>
+<p><strong>Properties</strong> are aggregated from many sources:
+</p>
+<ul>
+    <li>JVM system properties - <code>StandardEnvironment</code></li>
+    <li>System environment - <code>StandardEnvironment</code></li>
+    <li>servlets - only in <code>StandardServletEnvironment</code></li>
+    <li>property files - via <code>@PropertySource</code> </li>
+    <li>JNDI - via <code>JndiPropertySource</code></li>
+    <li>...</li>
+</ul>
+
+<aside class="notes">
+
+</aside>

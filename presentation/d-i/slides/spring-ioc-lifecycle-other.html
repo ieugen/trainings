@@ -1,0 +1,17 @@
+<h3>Bean Life Cycle (5) Other </h3>
+
+<ul>
+    <li>in non web applications register a shutdownHook()
+    <pre><code>
+        ctx.registerShutdownHook();
+        // hook is called prior to the app shutting down
+    </code></pre>
+    </li>
+    <li><strong>Lifecycle</strong>, <strong>LifeCycleProcessor</strong>, <strong>Phased</strong>,
+        <strong>SmartLifeCycle</strong> interface to bind beans to <strong>ApplicationContext</strong> lifecycle
+    </li>
+</ul>
+
+<aside class="notes">
+    Dacă nu înregistram un shutdown hook, JVM-ul se închide făra să curețe resursele.
+</aside>

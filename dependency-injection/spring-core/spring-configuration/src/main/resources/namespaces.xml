@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Notice attributes on the beans element -->
+<!-- Notice the lack of version in the schema declaration -->
+<beans
+        default-init-method="init"
+        default-destroy-method="destroy"
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xmlns:c="http://www.springframework.org/schema/c"
+        xmlns:context="http://www.springframework.org/schema/context"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/spring-context.xsd">
+
+    <!-- We can import other configurations - organize parts of application based on concerns -->
+    <import resource="imported.xml"/>
+
+    <!-- Notice the use of context namespace. We instruct Spring to scan for Beans in a package  -->
+    <context:component-scan base-package="di.spring.config.annotations"/>
+
+    <!-- Activate some annotation processing, Does not process @Transactional
+     annotation-config is implied by <context:component-scan/>    -->
+    <context:annotation-config/>
+
+    <bean id="barJava" class="di.spring.config.java.Bar"/>
+
+    <!-- Notice the use of p namespace -->
+    <bean id="bazJava" class="di.spring.config.java.Baz" p:aString="Notice the use of p namespace"/>
+
+    <!-- Notice the use of c namespace -->
+    <bean id="fooJava" class="di.spring.config.java.Foo"
+          c:bar-ref="barJava"
+          c:_1-ref="bazJava"/>
+
+    <alias name="fooJava" alias="secondNameForFooJava"/>
+
+    <!-- Creating beans via static factory methods and factory beans -->
+    <bean id="barFactory" class="di.spring.config.BarFactory"/>
+    <bean id="anotherBar1" class="di.spring.config.BarFactory" factory-method="staticMakeBar"/>
+    <bean id="anotherBar2" factory-bean="barFactory" factory-method="instanceMakeBar"/>
+
+</beans>

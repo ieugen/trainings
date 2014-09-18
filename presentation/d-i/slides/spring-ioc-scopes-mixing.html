@@ -1,0 +1,25 @@
+<h3>Using scoped beans as dependencies</h3>
+
+<p>Scoped beans other then <strong>singleton</strong> and <strong>prototype</strong>
+    require an <strong>AOP proxy</strong>
+</p>
+<pre><code data-format="xml" data-trim>&lt;bean id=&quot;userPreferences&quot; class=&quot;com.foo.UserPreferences&quot;
+    scope=&quot;session&quot;&gt;
+    &lt;!-- instructs the container to proxy the surrounding bean --&gt;
+    &lt;aop:scoped-proxy/&gt;
+    &lt;/bean&gt;
+    &lt;bean id=&quot;userService&quot; class=&quot;com.foo.SimpleUserService&quot;&gt;
+    &lt;property name=&quot;userPreferences&quot; ref=&quot;userPreferences&quot;/&gt;
+    &lt;/bean&gt;
+</code></pre>
+<p>HTTP Session-scoped bean exposed as a proxy ensures one UserPreferences per Session</p>
+
+<blockquote>
+    <a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/beans.html#beans-factory-scopes-other-injection">
+        Scoped beans as dependencies
+    </a>
+</blockquote>
+
+<aside class="notes">
+
+</aside>

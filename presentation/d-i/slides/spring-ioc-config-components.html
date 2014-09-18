@@ -1,0 +1,14 @@
+<h3>Components and stereotypes</h3>
+
+<p>Stereotype == meta-annotations == annotations for annotations</p>
+
+<blockquote>
+    <code>@Component</code>, <code>@Controller</code>, <code>@Repository</code>, <code>@Service</code>
+</blockquote>
+
+<p>Yo can define beans with <code>@Component</code> (or <code>@Named</code>)</p>
+
+<aside class="notes">
+    <p>The main advantage of using @Repository or @Service over @Component is that it's easy to write an AOP pointcut
+        that targets, for instance, all classes annotated with @Repository</p>
+</aside>

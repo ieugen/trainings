@@ -1,0 +1,18 @@
+<h3>Annotation driven configuration</h3>
+
+<p>Makes use of annotations to provide configuration metadata</p>
+<ul>
+    <li>are intrusive - pollute code</li>
+    <li>can be overridden by XML configuration</li>
+    <li>configuration is spread across classes - code harder to understand</li>
+    <li>faster development</li>
+</ul>
+
+<blockquote>You can define beans only via <strong>@Component</strong> or derivatives.
+    Other annotations just provide configuration metadata for bean creation, bot not the
+    <strong>BeanDefinition</strong> blueprint.
+</blockquote>
+
+<aside class="notes">
+    Dacă nu folosiți @Component va trebui să definiți Bean-urile în XML sau Java
+</aside>

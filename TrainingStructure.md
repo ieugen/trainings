@@ -42,36 +42,36 @@ Objectives:
  [done]- Bean scope and factory beans
 
 ### Advanced XML Dependency Injection
- - Most popular namespaces
- - Best practices when working with namespaces
- - Externalizing constant values into properties files
+ [done]- Most popular namespaces
+ [done]- Best practices when working with namespaces
+ [done]- Externalizing constant values into properties files
  [done]- Working with a high number of configuration files
- - Bean definition inheritance
+ [done]- Bean definition inheritance
 
 ### Annotation-Based Dependency Injection
  [done]- Autowiring and component scanning
- - Component scanning: how to do it right
+ [done]- Component scanning: how to do it right
  [done]- XML versus annotations: when to use what
- - Life cycle annotations: @PostConstruct and @PreDestroy
- - Stereotypes and meta-annotations
+ [done]- Life cycle annotations: @PostConstruct and @PreDestroy
+ [done]- Stereotypes and meta-annotations
 
 ### Java-Based Dependency Injection
- - @Configuration and @Bean annotations
- - Where is the magic? Inheritance-based proxies
- - Equivalent to XML namespaces: @Enable annotations
- - When to use Java configuration
+ [done]- @Configuration and @Bean annotations
+ [done]- Where is the magic? Inheritance-based proxies
+ [done]- Equivalent to XML namespaces: @Enable annotations
+ [done]- When to use Java configuration
 
 ### Bean Life Cycle: How Does Spring Work Internally?
- - The init phase: available interceptors
- - The init phase: what is the difference between XML, annotations, and Java configuration?
- - What happens during bean post processing
- - Use and destruction phases
+ [done]- The init phase: available interceptors
+ [done]- The init phase: what is the difference between XML, annotations, and Java configuration?
+ [done]- What happens during bean post processing
+ [done]- Use and destruction phases
 
 ### Testing a Spring-Based Application
  - Spring and test-driven development
  - @ContextConfiguration and @RunWith annotations
  - Application context caching and the @DirtiesContext annotation
- - Environment abstraction and bean definition profiles
+ [done]- Environment abstraction and bean definition profiles
 
 ### Aspect-Oriented Programming
  - What problems does AOP solve?
@@ -100,7 +100,7 @@ Objectives:
  - What is data persistence
  - Serialization/Deserialization
  - Objectual/Relational impedance
- - What are the persistance technologies available to Java developers: JDBC, JPA/Hibernate, MyBatis, JOOQ, JCR, NoSQL
+ - What are the persistence technologies available to Java developers: JDBC, JPA/Hibernate, MyBatis, JOOQ, JCR, NoSQL
 
 ### Data Access and JDBC
  - How Spring integrates with existing data access technologies

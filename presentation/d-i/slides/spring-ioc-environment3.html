@@ -1,0 +1,22 @@
+<h3>Working with profiles</h3>
+
+<p>Define a profile with</p>
+<pre><code>
+    @Configuration
+    // load more properties
+    @PropertySource("classpath:/com/myco/app.properties")
+    @Profile("production")
+    public class AppConfig{ //@Beans, beans, beans }
+</code></pre>
+enable by code
+<pre><code>
+    ctx.getEnvironment().setActiveProfiles("dev");
+</code></pre>
+or declaratively (by system property)
+<pre><code>
+    -Dspring.profiles.active="profile1,profile2"
+</code></pre>
+
+<aside class="notes">
+
+</aside>

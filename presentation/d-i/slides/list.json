@@ -12,24 +12,57 @@
         "intro-di-conclusions.html",
         "intro-di-questions.html"
     ],
-    "intro-spring.html",
-    "spring-modules.html",
-    "spring-overview.html",
     [
+        "intro-spring.html",
+        "spring-modules.html",
+        "spring-overview.html",
         "spring-core.html",
         "spring-ioc-overview.html",
         "spring-ioc-container.html",
         "spring-ioc-application-context.html",
         "spring-ioc-application-context2.html",
+        "spring-ioc-exercise-first.html"
+    ],
+    [
         "spring-ioc-config-metadata.html",
+        "spring-ioc-config-xml.html",
+        "spring-ioc-config-namespaces.html",
+        "spring-ioc-config-java.html",
+        "spring-ioc-config-annotations.html",
+        "spring-ioc-config-components.html",
+        "spring-ioc-config-components2.html",
+        "spring-ioc-config-standard-annotations.html",
+        "spring-ioc-exercise-config.html"
+    ],
+    [
         "spring-ioc-bean.html",
         "spring-ioc-dependency-resolution.html",
         "spring-ioc-autowiring.html",
-        "spring-ioc-bean-scopes.html",
-        "spring-ioc-bean-lifecycle.html"
+        "spring-ioc-scopes.html",
+        "spring-ioc-scopes-singleton.html",
+        "spring-ioc-scopes-prototype.html",
+        "spring-ioc-scopes-mixing.html",
+        "spring-ioc-exercise-scopes.html"
     ],
     [
-        "spring-test.html"
+        "spring-ioc-lifecycle.html",
+        "spring-ioc-lifecycle-diagram.html",
+        "spring-ioc-lifecycle-customization.html",
+        "spring-ioc-lifecycle-mixing.html",
+        "spring-ioc-lifecycle-other.html",
+        "spring-ioc-exercise-lifecycle.html",
+        "spring-ioc-bean-def-inheritance.html",
+        "spring-ioc-extension-points.html",
+        "spring-ioc-property-placeholder.html",
+        "spring-ioc-exercise-placeholder.html"
+    ],
+    "spring-expression-language.html",
+    [
+        "spring-test.html",
+        "spring-ioc-environment.html",
+        "spring-ioc-environment2.html",
+        "spring-ioc-environment3.html",
+        "spring-ioc-environment4.html"
     ],
     [
         "spring-aop.html"

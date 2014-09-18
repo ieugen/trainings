@@ -1,0 +1,21 @@
+<h3>Components and stereotypes (2)</h3>
+
+<p>Spring scans the classpath for annotated classes. You can configure it by:
+<pre><code data-trim>
+    @Configuration
+    @ComponentScan(basePackages = "org.example")
+</code></pre>
+or
+<pre><code>&lt;context:component-scan base-package=&quot;org.example&quot;/&gt;</code></pre>
+also with filters
+<pre><code data-trim>
+    @ComponentScan(basePackages = "org.example",
+    includeFilters = @Filter(type = FilterType.REGEX,
+    pattern = ".*Stub.*Repository"),
+    excludeFilters = @Filter(Repository.class))</code></pre>
+</p>
+
+
+<aside class="notes">
+
+</aside>

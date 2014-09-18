@@ -1,0 +1,25 @@
+<h3>Bean Life Cycle (4)</h3>
+
+<p>You can mix multiple lifecycle events</p>
+<ul>
+    <li>Initialization methods are called in this order:
+        <ul>
+            <li>methods annotated with <strong>@PostConstruct</strong></li>
+            <li><strong>afterPropertiesSet()</strong> method from <strong>InitializingBean</strong></li>
+            <li>custom configured <strong>init()</strong></li>
+        </ul>
+    </li>
+    <li>Destroy methods are called in the same order:
+        <ul>
+            <li>methods annotated with <strong>@PreDestroy</strong></li>
+            <li><strong>destroy</strong> method from <strong>DisposableBean</strong></li>
+            <li>custom configured <strong>destroy()</strong></li>
+        </ul>
+    </li>
+</ul>
+<blockquote>go to beans module</blockquote>
+
+
+<aside class="notes">
+
+</aside>

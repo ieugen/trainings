@@ -1,19 +1,19 @@
 package di.spring.beans;
 
 import di.spring.beans.lifecycle.Bar;
-import di.spring.beans.lifecycle.Foo;
+import di.spring.beans.lifecycle.FooCustomMethods;
 
 public class FooFactory {
 
-    private Foo foo = new Foo();
+    private FooCustomMethods fooCustomMethods = new FooCustomMethods();
 
-    public static Foo makeFoo(Bar bar) {
-        Foo foo1 = new Foo();
-        foo1.setBar(bar);
-        return foo1;
+    public static FooCustomMethods makeFoo(Bar bar) {
+        FooCustomMethods fooCustomMethods1 = new FooCustomMethods();
+        fooCustomMethods1.setBar(bar);
+        return fooCustomMethods1;
     }
 
-    public Foo makeFoo() {
-        return foo;
+    public FooCustomMethods makeFoo() {
+        return fooCustomMethods;
     }
 }
