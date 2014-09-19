@@ -74,10 +74,10 @@ Objectives:
  [done]- Environment abstraction and bean definition profiles
 
 ### Aspect-Oriented Programming
- - What problems does AOP solve?
- - Differences between Spring AOP and AspectJ
- - Defining pointcut expressions
- - Implementing an advice: @Around, @Before, @After, and so on
+ [done]- What problems does AOP solve?
+ [done]- Differences between Spring AOP and AspectJ
+ [done]- Defining pointcut expressions
+ [done]- Implementing an advice: @Around, @Before, @After, and so on
 
 ### Custom namespaces in Spring/Blueprint
  - what are custom XML namespaces and how to use them

@@ -1,0 +1,26 @@
+<h3>AOP Styles in Spring AOP</h3>
+
+<p><code>@AspectJ</code> style</p>
+<pre><code>
+    @Pointcut(execution(* get*()))
+    public void propertyAccess() {}
+
+    @Pointcut(execution(org.xyz.Account+ *(..))
+    public void operationReturningAnAccount() {}
+
+    @Pointcut(propertyAccess() && operationReturningAnAccount())
+    public void accountPropertyAccess() {}
+</code></pre>
+<p><code>XML</code> style</p>
+<pre><code>
+    &lt;aop:pointcut id=&quot;propertyAccess&quot;
+    expression=&quot;execution(* get*())&quot;/&gt;
+
+    &lt;aop:pointcut id=&quot;operationReturningAnAccount&quot;
+    expression=&quot;execution(org.xyz.Account+ *(..))&quot;/&gt;
+</code></pre>
+
+
+<aside class="notes">
+
+</aside>

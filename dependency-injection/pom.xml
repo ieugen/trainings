@@ -25,10 +25,11 @@
         <module>notebook-guice</module>
         <module>notebook-cdi</module>
         <module>notebook-dagger</module>
-        <module>spring-core/spring-configuration</module>
-        <module>spring-core/beans</module>
-        <module>spring-core/container-extensions</module>
-        <module>spring-core/testing</module>
+        <module>spring-configuration</module>
+        <module>beans</module>
+        <module>container-extensions</module>
+        <module>testing</module>
+        <module>spring-aop</module>
     </modules>
 
 </project>

@@ -73,7 +73,17 @@
         "spring-test-exercise.html"
     ],
     [
-        "spring-aop.html"
+        "spring-aop.html",
+        "spring-aop-about.html",
+        "spring-aop-diagram1.html",
+        "spring-aop-diagram2.html",
+        "spring-aop-diagram3.html",
+        "spring-aop-concepts.html",
+        "spring-aop-advice-types.html",
+        "spring-aop-vs-interceptor.html",
+        "spring-aop-ways.html",
+        "spring-aop-how.html",
+        "spring-aop-practice.html"
     ],
 
     "references.html"
