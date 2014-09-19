@@ -28,6 +28,7 @@
         <module>spring-core/spring-configuration</module>
         <module>spring-core/beans</module>
         <module>spring-core/container-extensions</module>
+        <module>spring-core/testing</module>
     </modules>
 
 </project>

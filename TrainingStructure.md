@@ -68,9 +68,9 @@ Objectives:
  [done]- Use and destruction phases
 
 ### Testing a Spring-Based Application
- - Spring and test-driven development
- - @ContextConfiguration and @RunWith annotations
- - Application context caching and the @DirtiesContext annotation
+ [done]- Spring and test-driven development
+ [done]- @ContextConfiguration and @RunWith annotations
+ [done]- Application context caching and the @DirtiesContext annotation
  [done]- Environment abstraction and bean definition profiles
 
 ### Aspect-Oriented Programming

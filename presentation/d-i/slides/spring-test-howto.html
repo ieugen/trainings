@@ -1,0 +1,17 @@
+<h2>Testing with Spring</h2>
+
+<ul>
+    <li>add the dependencies <code>spring-test</code> and <code>junit</code> / <code>TestNG</code></li>
+    <li>use <code>@RunWith</code> and <code>@ContextConfiguration</code> to bootstrap Spring</li>
+</ul>
+<pre>
+<code>
+    @RunWith(SpringJUnit4ClassRunner.class)
+    @ContextConfiguration(classes = IntegrationTestConfig.class)
+    public class PropertyLoadingTest {
+</code>
+</pre>
+<blockquote>see testing</blockquote>
+
+<aside class="notes">
+</aside>

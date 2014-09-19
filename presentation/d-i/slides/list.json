@@ -58,11 +58,19 @@
     ],
     "spring-expression-language.html",
     [
-        "spring-test.html",
         "spring-ioc-environment.html",
         "spring-ioc-environment2.html",
         "spring-ioc-environment3.html",
         "spring-ioc-environment4.html"
+    ],
+    [
+        "spring-test.html",
+        "spring-test-howto.html",
+        "spring-test-dirties.html",
+        "spring-test-jdbc.html",
+        "spring-test-sql.html",
+        "spring-test-tx.html",
+        "spring-test-exercise.html"
     ],
     [
         "spring-aop.html"

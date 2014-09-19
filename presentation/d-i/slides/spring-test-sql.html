@@ -1,0 +1,16 @@
+<h2>SQL Test support</h2>
+
+<p>Provides SQL execution support in test methods</p>
+<pre><code>
+    @RunWith(SpringJUnit4ClassRunner.class)
+    @ContextConfiguration
+    @Sql("/test-schema.sql")
+    public class DatabaseTests { ... }
+</code></pre>
+<blockquote>More in Data Persistence module</blockquote>
+
+<blockquote><a
+        href="http://docs.spring.io/spring/docs/current/spring-framework-reference/html/testing.html#testcontext-executing-sql">JDBC
+    SQL support in tests</a></blockquote>
+<aside class="notes">
+</aside>
