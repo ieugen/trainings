@@ -1,0 +1,9 @@
+<h2>JdbcTemplate option</h2>
+
+<p>Greatly simplifies JDBC usage:</p>
+<pre><code>
+    template = new JdbcTemplate(dataSource);
+    String sql = "select count(*) from person where name = ?";
+    int rowCount = template.queryForObject(sql, Integer.class,"Gabi");
+</code></pre>
+<blockquote>see <strong>spring-jdbc</strong></blockquote>

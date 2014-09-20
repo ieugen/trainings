@@ -4,10 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ieugen.trainings</groupId>
+    <groupId>ieugen.trainings.persistence</groupId>
     <artifactId>persistence</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <name>Trainings :: Java Persistence :: aggregator</name>
+
+    <modules>
+        <module>parent</module>
+        <module>simple-persistence</module>
+        <module>spring-oxm</module>
+        <module>standard-jdbc</module>
+        <module>spring-jdbc</module>
+    </modules>
 
 </project>

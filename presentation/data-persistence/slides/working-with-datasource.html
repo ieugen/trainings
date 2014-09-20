@@ -1,0 +1,12 @@
+<h2>Working with DataSource</h2>
+
+<pre><code>
+    JdbcDataSource dataSource = new JdbcDataSource();
+    dataSource.setUrl("jdbc:h2:mem:test");
+    dataSource.setUser("sa");
+    // set other properties
+    Connection connection = dataSource.getConnection();
+</code>
+</pre>
+
+<blockquote>see <strong>standard-jdbc</strong></blockquote>

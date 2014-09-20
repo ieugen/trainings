@@ -1,0 +1,10 @@
+<h3>NamedParameterJdbcTemplate option</h3>
+
+<p>Just like <code>JdbcTemplate</code> but with named parmeters</p>
+<pre><code>
+    template = new JdbcTemplate(dataSource);
+    String sql = "select count(*) from person where name = :name";
+    SqlParameterSource namedParameters = new MapSqlParameterSource("name", "Gabi");
+    int rowCount = template.queryForObject(sql, namedParameters, Integer.class);
+</code></pre>
+<blockquote>see <strong>spring-jdbc</strong></blockquote>

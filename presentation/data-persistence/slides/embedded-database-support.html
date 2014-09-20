@@ -1,0 +1,11 @@
+<h2>Embedded database support</h2>
+
+<p>Native support for using HSQL, H2 and Derby. </p>
+<p>Very useful in unit tests.</p>
+<pre><code>
+    EmbeddedDatabase db = new EmbeddedDatabaseBuilder()
+    .addScript("db_init.sql")
+    .setType(EmbeddedDatabaseType.H2)
+    .build();
+</code></pre>
+<blockquote>see <strong>spring-jdbc</strong></blockquote>

@@ -97,16 +97,16 @@ Objectives:
  - Use advanced frameworks for data access: Spring Data and Apache Deltaspike
 
 ### Introduction to data persistence 
- - What is data persistence
- - Serialization/Deserialization
+ [done] - What is data persistence
+ [done]- Serialization/Deserialization
+ [done]- What are the persistence technologies available to Java developers: JDBC, JPA/Hibernate, MyBatis, JOOQ, JCR, NoSQL
  - Objectual/Relational impedance
- - What are the persistence technologies available to Java developers: JDBC, JPA/Hibernate, MyBatis, JOOQ, JCR, NoSQL
 
 ### Data Access and JDBC
- - How Spring integrates with existing data access technologies
- - DataAccessException hierarchy
+ [done]- How Spring integrates with existing data access technologies
+ [done]- DataAccessException hierarchy
  - Implementing caching using @Cacheable
- - jdbc namespace and the Spring JdbcTemplate
+ [done]- jdbc namespace and the Spring JdbcTemplate
 
 ### Database Transactions (with Spring)
  - Understanding transactions 
