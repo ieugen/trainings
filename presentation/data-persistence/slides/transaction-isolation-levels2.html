@@ -1,0 +1,49 @@
+<h2>Isolation levels</h2>
+<p>
+<table summary="Transaction isolation levels" border="1">
+    <tbody>
+    <tr>
+        <th id="h1">Isolation Level</th>
+        <th id="h2">Transactions</th>
+        <th id="h3">Dirty Reads</th>
+        <th id="h4">Non-Repeatable Reads</th>
+        <th id="h5">Phantom Reads</th>
+    </tr>
+    <tr>
+        <td headers="h1"><code>TRANSACTION_NONE</code></td>
+        <td headers="h2">Not supported</td>
+        <td headers="h3"><em>Not applicable</em></td>
+        <td headers="h4"><em>Not applicable</em></td>
+        <td headers="h5"><em>Not applicable</em></td>
+    </tr>
+    <tr>
+        <td headers="h1"><code>TRANSACTION_READ_COMMITTED</code></td>
+        <td headers="h2">Supported</td>
+        <td headers="h3">Prevented</td>
+        <td headers="h4">Allowed</td>
+        <td headers="h5">Allowed</td>
+    </tr>
+    <tr>
+        <td headers="h1"><code>TRANSACTION_READ_UNCOMMITTED</code></td>
+        <td headers="h2">Supported</td>
+        <td headers="h3">Allowed</td>
+        <td headers="h4">Allowed</td>
+        <td headers="h5">Allowed</td>
+    </tr>
+    <tr>
+        <td headers="h1"><code>TRANSACTION_REPEATABLE_READ</code></td>
+        <td headers="h2">Supported</td>
+        <td headers="h3">Prevented</td>
+        <td headers="h4">Prevented</td>
+        <td headers="h5">Allowed</td>
+    </tr>
+    <tr>
+        <td headers="h1"><code>TRANSACTION_SERIALIZABLE</code></td>
+        <td headers="h2">Supported</td>
+        <td headers="h3">Prevented</td>
+        <td headers="h4">Prevented</td>
+        <td headers="h5">Prevented</td>
+    </tr>
+    </tbody>
+</table>
+</p>

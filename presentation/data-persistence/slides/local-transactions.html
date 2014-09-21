@@ -1,0 +1,19 @@
+<h2>Local transaction model</h2>
+
+<ul>
+    <li>the transaction is managed by the underlying database.</li>
+    <li>developer manages connections, not transactions</li>
+</ul>
+<pre><code>
+    Connection conn = DataSourceUtils.getConnection(dataSource);
+    conn.setAutoCommit(false);
+    String sql = "update trade_order ... ";
+    try (stmt = conn.createStatement();){
+    stmt.executeUpdate(sql);
+    conn.commit();
+    } catch (Exception e) {
+    conn.rollback();
+    throw e;
+    }
+</code>
+</pre>

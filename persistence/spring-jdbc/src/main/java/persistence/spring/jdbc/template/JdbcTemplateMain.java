@@ -15,11 +15,11 @@ public class JdbcTemplateMain {
 
         JdbcTemplate template = context.getBean(JdbcTemplate.class);
 
-        template.execute("create table person(id integer , name char(100), age integer)");
+        template.execute("create table person(id integer auto_increment, name char(100), age integer)");
 
-        template.update("insert into person(id, name, age) values(?,?,?)", 1, "Ioan", 23);
-        template.update("insert into person(id, name, age) values(?,?,?)", 2, "Ana", 26);
-        template.update("insert into person(id, name, age) values(?,?,?)", 3, "Maria", 19);
+        template.update("insert into person(name, age) values(?,?)","Ioan", 23);
+        template.update("insert into person(name, age) values(?,?)","Ana", 26);
+        template.update("insert into person(name, age) values(?,?)","Maria", 19);
 
         List<Person> persons = template.query("select * from person", new PersonMapper());
 
