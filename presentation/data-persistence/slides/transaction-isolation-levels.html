@@ -1,0 +1,23 @@
+<h2>Isolation levels</h2>
+
+<p>Levels defined by <code>java.sql.Connection</code></p>
+<ul>
+    <li>TRANSACTION_NONE</li>
+    <li>TRANSACTION_READ_COMMITTED</li>
+    <li>TRANSACTION_READ_UNCOMMITTED</li>
+    <li>TRANSACTION_REPEATABLE_READ</li>
+    <li>TRANSACTION_SERIALIZABLE</li>
+</ul>
+<p>Not all databases(drivers) support all levels !</p>
+<p>Isolation is important in concurrent access to DB.</p>
+<blockquote>
+    <a href="http://en.wikipedia.org/wiki/Isolation_%28database_systems%29#Isolation_levels">Isolation levels</a>
+</blockquote>
+
+
+<aside class="notes">
+    Isolation is usally implemented with: <strong>Locks</strong>
+    - read locks
+    - write locks
+    - range locks - detects phantom reads
+</aside>

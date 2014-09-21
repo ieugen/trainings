@@ -1,0 +1,16 @@
+<h2>Programmatic transactions</h2>
+
+<p>Developer manages <strong>Transactions</strong> via Java code:</p>
+<pre><code>
+    UserTransaction txn = sessionCtx.getUserTransaction();
+    txn.begin();
+    try {
+        TradeOrderDAO dao = new TradeOrderDAO();
+        dao.updateTradeOrder(order);
+        txn.commit();
+    } catch (Exception e) {
+        log.fatal(e);
+        txn.rollback();
+        throw e;
+    }
+</code></pre>

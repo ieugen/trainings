@@ -1,0 +1,11 @@
+<h2>Declarative transactions</h2>
+
+<p>The container manages transactions (begin()/commmit()).
+</p>
+<pre><code>
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void myMethod() {
+    // business code
+    }
+</code></pre>
+<p> Developer instructs the container how to manage the transaction.</p>

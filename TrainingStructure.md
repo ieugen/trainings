@@ -100,7 +100,6 @@ Objectives:
  [done] - What is data persistence
  [done]- Serialization/Deserialization
  [done]- What are the persistence technologies available to Java developers: JDBC, JPA/Hibernate, MyBatis, JOOQ, JCR, NoSQL
- - Objectual/Relational impedance
 
 ### Data Access and JDBC
  [done]- How Spring integrates with existing data access technologies
@@ -109,16 +108,17 @@ Objectives:
  [done]- jdbc namespace and the Spring JdbcTemplate
 
 ### Database Transactions (with Spring)
- - Understanding transactions 
- - Transaction management strategies: connection management, programatic transaction management, declarative transaction management
+ [done]- Understanding transactions
+ [done]- Transaction management strategies: local transaction management, programatic transaction management, declarative transaction management
  - @Transactional annotation
  - Transactions configuration: XML versus annotations
- - Isolation levels, transaction propagation, and rollback rules
+ [done]- Isolation levels, transaction propagation, and rollback rules
  - Transactions and integration testing
  - Should you use read-only transactions?
 
 ###  Introduction to JPA
  - Introduction to Java Persistence API
+ - Objectual/Relational impedance
  - Entity mapping: XML vs Annotations
  - Relationships
  - Inheritance: Singel Table, Joined Table, Class per table
@@ -131,8 +131,8 @@ Objectives:
  - PersistenceException versus the Spring DataAccessException
 
 ### Advanced persistence frameworks
- - Spring Data (JPA)
- - Apache Deltaspike
+ [done]- Spring Data (JPA)
+ [done]- Apache Deltaspike
 
 3. OSGi
 =======

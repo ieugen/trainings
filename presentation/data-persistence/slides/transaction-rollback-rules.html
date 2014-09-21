@@ -1,0 +1,10 @@
+<h3>Spring Transaction rollback rules</h3>
+
+<blockquote>Declarative transactions roll back on <strong>Exception</strong>.</blockquote>
+<blockquote>Default is to rollback only on <strong>RuntimeExceptions</strong>.</blockquote>
+<pre><code>
+    @Transactional(rollbackFor=MyBusinessException.class)
+    public void myMethod(){ ... }
+</code></pre>
+<p>You can set rollback rules in XML also.</p>
+

@@ -1,0 +1,27 @@
+<h2>Concurrency control</h2>
+
+<p>The main categories are:</p>
+<ul>
+    <li><strong>optimistic</strong> - check for violation at the end of transactions and repeat</li>
+    <li><strong>pessimistic</strong> - block transaction to avoid violations</li>
+    <li><strong>semi-optimistic</strong> - mix of the above</li>
+</ul>
+<p>Are usually implemented with <strong>Locking</strong>: Read, Write, Range</p>
+<p>
+    Optimistic Locking, Pessimistic Locking in JPA.
+</p>
+
+<aside class="notes">
+    Optimistic - Delay the checking of whether a transaction meets the isolation and other integrity rules (e.g.,
+    serializability and recoverability) until its end, without blocking any of its (read, write) operations ("...and be
+    optimistic about the rules being met..."), and then abort a transaction to prevent the violation, if the desired
+    rules are to be violated upon its commit. An aborted transaction is immediately restarted and re-executed, which
+    incurs an obvious overhead (versus executing it to the end only once). If not too many transactions are aborted,
+    then being optimistic is usually a good strategy.
+
+    Pessimistic - Block an operation of a transaction, if it may cause violation of the rules, until the possibility of
+    violation disappears. Blocking operations is typically involved with performance reduction.
+
+    Semi-optimistic - Block operations in some situations, if they may cause violation of some rules, and do not block
+    in other situations while delaying rules checking (if needed) to transaction's end, as done with optimistic.
+</aside>
