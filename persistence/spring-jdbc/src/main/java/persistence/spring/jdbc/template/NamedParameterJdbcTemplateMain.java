@@ -52,7 +52,7 @@ public class NamedParameterJdbcTemplateMain {
             DataSourceInitializer dataSourceInitializer = new DataSourceInitializer();
             dataSourceInitializer.setDataSource(dataSource);
             DatabasePopulator populator = new ResourceDatabasePopulator(new ClassPathResource("db_init.sql"));
-
+//            dataSourceInitializer.setEnabled();
             dataSourceInitializer.setDatabasePopulator(populator);
 //            dataSourceInitializer.setEnabled();
 

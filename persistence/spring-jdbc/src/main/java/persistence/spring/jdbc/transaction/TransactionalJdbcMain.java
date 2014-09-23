@@ -28,14 +28,14 @@ public class TransactionalJdbcMain {
         person.setAge(31);
 
         dao.save(person);
-
+        System.out.println("-------");
         System.out.println(dao.list());
 
     }
 
     @Configuration
     @Import(AppConfig.class)
-    @EnableTransactionManagement
+//    @EnableTransactionManagement
     public static class Config {
 
         @Bean

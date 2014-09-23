@@ -8,9 +8,11 @@ import org.aspectj.lang.annotation.Before;
 public class MyBeforeAspect {
 
     // intercept the execution of any Foo,methodCall() method
-    @Before("execution(public * di.spring.aop.Foo.methodCall(..))")
+    @Before("execution(* di.spring.aop.Foo.*(..))")
     public void allMethodCalls(JoinPoint pjp) throws Throwable {
         Object[] args = pjp.getArgs();
-        System.out.println("We are doing AOP. Params are:" + args[0] + "," + args[1]);
+        String result = (args.length != 0) ? args[0] + "," + args[1] : "no args";
+
+        System.out.println("We are doing AOP. Params are:" + result);
     }
 }

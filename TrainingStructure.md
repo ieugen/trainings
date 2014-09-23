@@ -110,25 +110,25 @@ Objectives:
 ### Database Transactions (with Spring)
  [done]- Understanding transactions
  [done]- Transaction management strategies: local transaction management, programatic transaction management, declarative transaction management
- - @Transactional annotation
+ [done]- @Transactional annotation
  - Transactions configuration: XML versus annotations
  [done]- Isolation levels, transaction propagation, and rollback rules
- - Transactions and integration testing
- - Should you use read-only transactions?
+ [done]- Transactions and integration testing
+ [done]- Should you use read-only transactions?
 
 ###  Introduction to JPA
- - Introduction to Java Persistence API
- - Objectual/Relational impedance
- - Entity mapping: XML vs Annotations
- - Relationships
- - Inheritance: Singel Table, Joined Table, Class per table
+ [done]- Introduction to Java Persistence API
+ [done]- Objectual/Relational impedance
+ [done]- Entity mapping: XML vs Annotations
+ [done]- Relationships
+ [done]- Inheritance: Singel Table, Joined Table, Class per table
  - Caching
 
 ### Integrating Spring with JPA and Hibernate
- - Quick introduction to ORM with JPA
- - Benefits of using Spring with JPA
- - JPA configuration in Spring
- - PersistenceException versus the Spring DataAccessException
+ [done]- Quick introduction to ORM with JPA
+ [done]- Benefits of using Spring with JPA
+ [done]- JPA configuration in Spring
+ [done]- PersistenceException versus the Spring DataAccessException
 
 ### Advanced persistence frameworks
  [done]- Spring Data (JPA)

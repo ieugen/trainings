@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_2_0.xsd"
+                 version="2.0">
+
+    <persistence-unit-metadata>
+        <!-- ignore annotations completely -->
+        <xml-mapping-metadata-complete/>
+
+    </persistence-unit-metadata>
+
+    <package>persistence.jpa.spring.model</package>
+
+    <entity class="Person" access="FIELD" metadata-complete="true">
+
+        <named-query name="Person.listAll">
+            <query>select p from Person p</query>
+        </named-query>
+
+        <attributes>
+            <id name="id">
+                <generated-value strategy="AUTO"/>
+            </id>
+            <basic name="name"/>
+            <basic name="age"/>
+        </attributes>
+
+    </entity>
+
+</entity-mappings>

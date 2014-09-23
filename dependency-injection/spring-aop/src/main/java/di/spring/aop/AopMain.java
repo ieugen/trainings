@@ -14,6 +14,7 @@ public class AopMain {
         Foo foo = context.getBean(Foo.class);
 
         System.out.println(foo.methodCall("eugen", 3));
+        foo.testAop();
 
     }
 
@@ -26,14 +27,14 @@ public class AopMain {
             return new Foo();
         }
 
-        @Bean
-        public MyUselessAspect uselessAspect() {
-            return new MyUselessAspect();
-        }
+//        @Bean
+//        public MyBeforeAspect myBeforeAspect() {
+//            return new MyBeforeAspect();
+//        }
 
         @Bean
-        public MyBeforeAspect myBeforeAspect() {
-            return new MyBeforeAspect();
+        public MyAroundAdvice myAroundAdvice(){
+            return new MyAroundAdvice();
         }
     }
 }

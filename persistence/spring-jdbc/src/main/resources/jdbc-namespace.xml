@@ -9,8 +9,8 @@
         <jdbc:script location="db_init.sql"/>
     </jdbc:embedded-database>
 
-    <!--<jdbc:initialize-database>-->
-        <!--<jdbc:script/>-->
-    <!--</jdbc:initialize-database>-->
+    <jdbc:initialize-database>
+        <jdbc:script location="db_init.sql"/>
+    </jdbc:initialize-database>
 
 </beans>

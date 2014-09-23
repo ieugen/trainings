@@ -17,6 +17,8 @@
         <module>spring-oxm</module>
         <module>standard-jdbc</module>
         <module>spring-jdbc</module>
+        <module>standard-jpa</module>
+        <module>spring-jpa</module>
     </modules>
 
 </project>

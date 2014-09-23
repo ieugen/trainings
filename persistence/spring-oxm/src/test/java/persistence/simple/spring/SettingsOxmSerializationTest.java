@@ -56,6 +56,7 @@ public class SettingsOxmSerializationTest {
                 "<settings>" +
                 "<fooEnabled>true</fooEnabled>" +
                 "<message>Hello OXM</message>" +
+                "<message1>Hello OXM</message1>" +
                 "</settings>";
 
         Settings result = (Settings) unmarshaller.unmarshal(new StreamSource(new StringReader(xml)));
