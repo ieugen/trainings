@@ -13,6 +13,8 @@
     <artifactId>features</artifactId>
     <packaging>pom</packaging>
 
+    <name>Trainings :: OSGi :: Karaf Features</name>
+
     <build>
         <plugins>
             <plugin>

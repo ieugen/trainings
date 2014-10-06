@@ -1,13 +1,16 @@
 package persistence.jpa.spring;
 
-import org.h2.jdbcx.JdbcDataSource;
 import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabase;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
+import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import persistence.jpa.spring.model.Person;
 
 import javax.persistence.EntityManager;
@@ -36,17 +39,15 @@ public class SpringJpaMain {
     }
 
     @Configuration
-//     do we need to enable this if we use EntityManager.getTransaction() ?!?
-//    @EnableTransactionManagement
+    @EnableTransactionManagement
     public static class Config {
 
         @Bean
         public DataSource dataSource() {
-            JdbcDataSource dataSource = new JdbcDataSource();
-            dataSource.setUrl("jdbc:h2:mem:test;DB_CLOSE_DELAY=-1");
-            dataSource.setUser("sa");
-            dataSource.setPassword("");
-            return dataSource;
+            EmbeddedDatabase builder = new EmbeddedDatabaseBuilder()
+                    .setType(EmbeddedDatabaseType.H2)
+                    .build();
+            return builder;
         }
 
         @Bean

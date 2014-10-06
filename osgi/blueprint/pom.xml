@@ -13,6 +13,8 @@
     <artifactId>blueprint</artifactId>
     <packaging>bundle</packaging>
 
+    <name>Trainings :: OSGi :: Blueprint</name>
+
     <dependencies>
         <dependency>
             <groupId>ieugen.trainings</groupId>

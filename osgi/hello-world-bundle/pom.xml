@@ -13,6 +13,8 @@
     <artifactId>hello-world-bundle</artifactId>
     <packaging>bundle</packaging>
 
+    <name>Trainings :: OSGi :: Hello World Bundle</name>
+
     <dependencies>
         <dependency>
             <groupId>org.osgi</groupId>

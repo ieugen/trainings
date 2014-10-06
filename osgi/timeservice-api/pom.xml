@@ -13,4 +13,6 @@
     <artifactId>timeservice-api</artifactId>
     <packaging>bundle</packaging>
 
+    <name>Trainings :: OSGi :: TimeService API</name>
+
 </project>

@@ -13,6 +13,7 @@
 
     <groupId>ieugen.trainings.persistence</groupId>
     <artifactId>spring-oxm</artifactId>
+
     <name>Trainings :: Java Persistence :: XML serialization</name>
 
     <dependencies>

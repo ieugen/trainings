@@ -34,7 +34,7 @@ public class SystemMilisTimeService implements TimeService {
     @Override
     public long now() {
         long time = System.currentTimeMillis();
-        System.out.println(getClass().toString() + config.get("message") + time);
+        System.out.println(getClass().toString() +"" +config.get("message") + time);
         return time;
     }
 

@@ -13,6 +13,8 @@
     <artifactId>spring-dm-sample</artifactId>
     <packaging>bundle</packaging>
 
+    <name>Trainings :: OSGi :: Spring Dynamic Modules</name>
+
     <dependencies>
         <dependency>
             <groupId>ieugen.trainings</groupId>
@@ -26,11 +28,6 @@
             <plugin>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>maven-bundle-plugin</artifactId>
-                <configuration>
-                    <instructions>
-                        <Spring-Context></Spring-Context>
-                    </instructions>
-                </configuration>
             </plugin>
         </plugins>
     </build>

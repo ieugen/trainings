@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.0.0"
+           xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd">
+
+    <!-- blueprint property placeholders, that will use etc/my-camel-route.cfg as the properties file when running in Karaf-->
+    <cm:property-placeholder persistent-id="my-camel-route"/>
+
+    <!-- a bean that uses a blueprint property placeholder: notice different placeholder >> ${}-->
+    <bean id="myCoolBean" class="java.lang.String">
+        <argument value="${messages.hello}"/>
+    </bean>
+
+    <camelContext xmlns="http://camel.apache.org/schema/blueprint"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd"
+                  id="camel-default"
+                  trace="false"
+                  useBlueprintPropertyResolver="true">
+
+        <route id="timerRoute">
+            <from uri="{{route.from}}"/>
+            <to uri="log:test"/>
+            <to uri="{{route.to}}"/>
+        </route>
+
+    </camelContext>
+
+</blueprint>

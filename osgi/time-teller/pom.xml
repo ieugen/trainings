@@ -13,6 +13,8 @@
     <artifactId>time-teller</artifactId>
     <packaging>bundle</packaging>
 
+    <name>Trainings :: OSGi :: Time Teller </name>
+
     <dependencies>
         <dependency>
             <groupId>org.osgi</groupId>

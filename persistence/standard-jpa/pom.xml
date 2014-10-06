@@ -13,6 +13,8 @@
     <groupId>ieugen.trainings.persistence</groupId>
     <artifactId>standard-jpa</artifactId>
 
+    <name>Trainings :: Java Persistence :: Standard JPA</name>
+
     <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>

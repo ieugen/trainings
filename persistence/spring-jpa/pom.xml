@@ -13,6 +13,8 @@
     <groupId>ieugen.trainings.persistence</groupId>
     <artifactId>spring-jpa</artifactId>
 
+    <name>Trainings :: Java Persistence :: Spring JPA</name>
+
     <dependencies>
         <dependency>
             <groupId>org.projectlombok</groupId>

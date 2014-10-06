@@ -11,6 +11,7 @@ import org.osgi.service.component.annotations.ReferencePolicyOption;
 import osgi.timeservice.api.TimeService;
 
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 @Component(immediate = true)
@@ -19,7 +20,7 @@ public class TimeTeller {
     Set<TimeService> timeServices = new HashSet<TimeService>();
 
     @Activate
-    public void activate() {
+    public void activate(Map<String,Object> config) {
         System.out.println(getClass() + " activated");
         tellTime();
     }
@@ -35,7 +36,7 @@ public class TimeTeller {
         System.out.println(getClass() + " deactivated");
     }
 
-    @Reference(cardinality = ReferenceCardinality.MULTIPLE,
+    @Reference(cardinality = ReferenceCardinality.MANDATORY,
             service = TimeService.class,
             policy = ReferencePolicy.DYNAMIC,
             unbind = "removeTimeService",

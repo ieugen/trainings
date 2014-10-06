@@ -5,7 +5,11 @@
           xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0">
 
     <feature name="my-bundles" version="${project.version}" resolver="(obr)">
+        <config name="asas" />
+        <configfile finalname="etc/assasa.cfg" override="">
+            mvn:asdadasd.a/config/asasasaassa
 
+        </configfile>
     </feature>
 
 </features>

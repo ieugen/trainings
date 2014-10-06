@@ -7,7 +7,12 @@ public class Activator implements BundleActivator {
 
     @Override
     public void start(BundleContext context) throws Exception {
+
         System.out.println("Hello from OSGi");
+        String service = new String("aaaaaa");
+
+        context.registerService(String.class,service,null);
+
     }
 
     @Override
